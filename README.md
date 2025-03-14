@@ -50,6 +50,41 @@ En otra terminal:
 java cliente.Cliente
 ```
 
+## Ejemplo de posible salida
+
+### Terminal Cliente
+```sh
+Iniciando cliente...
+Hola, soy un servidor. ¿Cómo te llamas?
+Celia
+Te doy la bienvenida Celia.
+Voy a solicitarte distintos requisitos para la contraseña que voy a generar.
+¿Cuántas minúsculas debe tener la contraseña?
+2
+¿Cuántas mayúsculas debe tener la contraseña?
+3
+¿Cuántos dígitos debe tener la contraseña?
+2
+¿Cuántos caracteres especiales debe tener la contraseña?
+4
+La longitud de la contraseña que se va a generar es de 11
+¿Quieres generar la contraseña ahora? [si/no]
+si
+La contraseña generada es: _4X+(*fiCN2
+```
+
+### Terminal Servidor
+```sh
+Esperando al cliente...
+Cliente conectado desde /127.0.0.1
+Nombre del cliente: Celia
+Los requisitos del cliente son los siguientes: 
+PasswordReqs{minusculas=2, mayusculas=3, digitos=2, caracteresEspeciales=4}
+Se ha enviado la longitud de la contraseña al cliente
+Se ha enviado la contraseña al cliente.
+Esperando al cliente...
+```
+
 ## Mejoras Futuras
 Conforme vaya teniendo tiempo, me gustaría mejorar el control de errores, crear algún método de cifrado de la contraseña antes de ser enviada al cliente, y crear una interfaz gráfica del proyecto.
 
